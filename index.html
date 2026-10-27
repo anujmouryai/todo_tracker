@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Todo Tracker</h1>
+        <p>Manage your daily tasks</p>
+
+        <form id="todo-form">
+            <input
+                type="text"
+                id="todo-input"
+                placeholder="Enter your task..."
+            >
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="stats">
+            <span>Total: <span id="total-count">0</span></span>
+            <span>Completed: <span id="completed-count">0</span></span>
+            <span>Pending: <span id="pending-count">0</span></span>
+        </div>
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search tasks..."
+        >
+
+        <div class="filters">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter="pending">Pending</button>
+            <button type="button" data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+        <p id="empty-message">No tasks yet. Add your first task!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
