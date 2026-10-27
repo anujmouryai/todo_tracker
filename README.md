@@ -55,3 +55,4 @@ The application uses browser localStorage to save tasks. Saved tasks remain avai
 ## Author
 
 Created as a frontend development practice project.
+# todo_tracker
